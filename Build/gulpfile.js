@@ -22,14 +22,13 @@ var PATHS = {
         'bower_components/jquery/dist/jquery.min.js',
 
         //Foundation
-        //foundation addons
         'bower_components/what-input/what-input.min.js',
         'bower_components/foundation-sites/dist/js/foundation.min.js',
 
 		//other
-		'bower_components/bx-slider.js/dist/jquery.bxslider.js',
-		'bower_components/colorbox/jquery.colorbox.js',
-		'bower_components/jquery-touchSwipe/jquery.touchSwipe.js'
+		'bower_components/bx-slider.js/dist/jquery.bxslider.min.js',
+		'bower_components/colorbox/jquery.colorbox-min.js',
+		'bower_components/jquery-touchSwipe/jquery.touchSwipe.min.js'
 
 	],
 	site_js: [
@@ -49,7 +48,8 @@ var PATHS = {
 
 gulp.task('jsLibs', function () {
 	return gulp.src(PATHS.js_libs)
-		.pipe(concat('site-libs.js'))
+		.pipe(concat('site-libs.min.js'))
+		// .pipe(uglify())
 		.pipe(gulp.dest(PATHS.site_dist + 'JavaScript/'));
 });
 

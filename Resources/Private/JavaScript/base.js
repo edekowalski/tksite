@@ -30,8 +30,6 @@ $(function () {
         }
     });
 
-    //cke code
-    hljs.initHighlightingOnLoad();
 });
 
 function initColorbox() {
