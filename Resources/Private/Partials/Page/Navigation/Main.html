@@ -1,0 +1,62 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+			data-namespace-typo3-fluid="true">
+
+<f:if condition="{mainMenu}">
+	<ul class="vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
+		<f:for each="{mainMenu}" as="mainItem">
+			<f:render section="menuItem" arguments="{item: mainItem}"/>
+			<f:if condition="{mainItem.children}">
+				<f:render section="submenu" arguments="{submenu: mainItem.children}"/>
+			</f:if>
+			</li>
+		</f:for>
+	</ul>
+</f:if>
+
+<f:section name="submenu">
+	<ul class="vertical menu">
+		<f:for each="{submenu}" as="subItem">
+			<f:render section="menuItem" arguments="{item: subItem}"/>
+			<f:if condition="{subItem.children}">
+				<f:render section="submenu" arguments="{submenu: subItem.children}"/>
+			</f:if>
+			</li>
+		</f:for>
+	</ul>
+</f:section>
+
+<f:section name="menuItem">
+	<f:if condition="{item.active} || {item.current}">
+		<f:then>
+			<li class="{f:if(condition:item.active, then:' active')}{f:if(condition:item.current, then:' current')}">
+			<f:render section="menuLink" arguments="{item: item}"/>
+		</f:then>
+		<f:else if="{item.spacer}">
+			<li class="spacer">
+			<span>{item.title}</span>
+		</f:else>
+		<f:else>
+			<li>
+			<f:render section="menuLink" arguments="{item: item}"/>
+		</f:else>
+	</f:if>
+</f:section>
+
+<f:section name="menuLink">
+	<f:if condition="{item.data.target}">
+		<f:then>
+			<a href="{item.link}" target="{item.data.target}" title="{item.title}">
+		</f:then>
+		<f:else if="{item.target}">
+			<a href="{item.link}" target="{item.target}" title="{item.title}">
+		</f:else>
+		<f:else>
+			<a href="{item.link}" title="{item.title}">
+		</f:else>
+	</f:if>
+	<span>{item.title}</span>
+	</a>
+
+</f:section>
+
+</html>

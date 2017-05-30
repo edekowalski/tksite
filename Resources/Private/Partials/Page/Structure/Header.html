@@ -1,0 +1,37 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+			data-namespace-typo3-fluid="true">
+
+<div class="title-bar" data-responsive-toggle="menu-main" data-hide-for="medium">
+	<div class="title-bar-left">
+		<f:link.page pageUid="{settings.pidRoot}" class="logo" title="Home">Home</f:link.page>
+	</div>
+	<div class="title-bar-right">
+		<button class="menu-icon" type="button" data-toggle="menu-main"> </button>
+	</div>
+</div>
+
+<div class="page-header">
+	<div class="top-bar">
+		<div class="top-bar-left">
+			<f:link.page pageUid="{settings.pidRoot}" class="logo top-bar-title" title="Home">Home</f:link.page>
+		</div>
+
+		<div class="top-bar-right">
+			<div class="meta">
+				<f:render partial="Navigation/Meta" arguments="{_all}"/><br>
+				<f:render partial="Navigation/Language" arguments="{_all}"/>
+				<div class="searchbox">
+					<f:cObject typoscriptObjectPath="lib.searchbox"/>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div data-sticky-container>
+	<div class="menu-main" id="menu-main" data-sticky data-options="marginTop:0;" data-top-anchor="150">
+		<f:render partial="Navigation/Main" arguments="{_all}"/>
+	</div>
+</div>
+
+</html>

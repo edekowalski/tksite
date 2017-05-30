@@ -1,0 +1,186 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+type: Form
+identifier: fullTest
+label: FullTest
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'send mail'
+      recipientAddress: r@r.de
+      recipientName: ''
+      senderAddress: s@s.de
+      senderName: ''
+      replyToAddress: ''
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: 'true'
+      translation:
+        language: ''
+    identifier: EmailToReceiver
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'previous Page'
+      nextButtonLabel: 'next Page'
+    type: Page
+    identifier: page-4
+    label: Structure
+    renderables:
+      -
+        type: Fieldset
+        identifier: fieldset-1
+        label: Fieldset
+      -
+        type: GridRow
+        identifier: gridrow-1
+        label: 'Grid: Row'
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-2
+            label: Text
+            properties:
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: '6'
+                  xs:
+                    numbersOfColumnsToUse: '12'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  md:
+                    numbersOfColumnsToUse: '6'
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-3
+            label: Text
+            properties:
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: '6'
+                  xs:
+                    numbersOfColumnsToUse: '12'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  md:
+                    numbersOfColumnsToUse: '6'
+  -
+    renderingOptions:
+      previousButtonLabel: 'previous Page'
+      nextButtonLabel: 'next Page'
+    type: Page
+    identifier: page-1
+    label: Standard
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-1
+        label: Text
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: Textarea
+      -
+        defaultValue: ''
+        type: Password
+        identifier: password-1
+        label: Password
+  -
+    renderingOptions:
+      previousButtonLabel: 'previous Page'
+      nextButtonLabel: 'next Page'
+    type: Page
+    identifier: page-2
+    label: Checks
+    renderables:
+      -
+        type: Checkbox
+        identifier: checkbox-1
+        label: Checkbox
+      -
+        type: SingleSelect
+        identifier: singleselect-1
+        label: 'Single select'
+      -
+        type: RadioButton
+        identifier: radiobutton-1
+        label: 'Radio button'
+      -
+        type: MultiCheckbox
+        identifier: multicheckbox-1
+        label: 'Multi checkbox'
+      -
+        type: MultiSelect
+        identifier: multiselect-1
+        label: 'Multi select'
+  -
+    renderingOptions:
+      previousButtonLabel: 'previous Page'
+      nextButtonLabel: 'next Page'
+    type: Page
+    identifier: page-3
+    label: Advanced
+    renderables:
+      -
+        properties:
+          saveToFileMount: '1:/form_uploads/'
+          allowedMimeTypes:
+            - application/pdf
+        type: FileUpload
+        identifier: fileupload-1
+        label: 'File upload'
+      -
+        properties:
+          dateFormat: Y-m-d
+          enableDatePicker: 'true'
+          displayTimeSelector: 'false'
+        type: DatePicker
+        identifier: datepicker-1
+        label: 'Date picker'
+      -
+        defaultValue: ''
+        type: Hidden
+        identifier: hidden-1
+        label: Hidden
+      -
+        properties:
+          saveToFileMount: '1:/user_upload/'
+          allowedMimeTypes:
+            - image/jpeg
+        type: ImageUpload
+        identifier: imageupload-1
+        label: 'Image upload'
+      -
+        properties:
+          confirmationLabel: Confirmation
+        type: AdvancedPassword
+        identifier: advancedpassword-1
+        label: 'Advanced password'
+      -
+        properties:
+          text: ''
+        type: StaticText
+        identifier: statictext-1
+        label: 'Static text'
+      -
+        properties:
+          contentElementUid: '1'
+        type: ContentElement
+        identifier: contentelement-1
+        label: 'Content element'
+  -
+    renderingOptions:
+      previousButtonLabel: 'previous Page'
+      nextButtonLabel: 'next Page'
+    type: SummaryPage
+    identifier: summarypage-1
+    label: 'Summary page'

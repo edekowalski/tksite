@@ -1,0 +1,29 @@
+{
+  "name": "typo3-template",
+  "version": "1.0.0",
+  "description": "Master Template",
+  "main": "gulpfile.js",
+  "keywords": [
+    "gulp",
+    "TYPO3"
+  ],
+  "author": "Thomas Kieslich",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-scss-lint": "^0.4.0",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^3.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^1.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-svg2png": "^1.0.0",
+    "gulp-util": "^3.0.7",
+    "run-sequence": "^1.2.0",
+    "gulp-rsync": "^0.0.6"
+  },
+  "private": true
+}

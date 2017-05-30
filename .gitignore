@@ -1,0 +1,3 @@
+*.idea
+/Build/bower_components/
+/Build/node_modules/

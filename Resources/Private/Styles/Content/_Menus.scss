@@ -1,0 +1,77 @@
+.menu-main {
+  background-color: $dark-gray;
+  width: 100%;
+  z-index: 9999;
+  a {
+    //font-size: 16px;
+    color: $white;
+  }
+
+  @include breakpoint(medium down) {
+    li {
+      border-bottom: 1px solid $white;
+      &:first-child {
+        border-top: 1px solid $white;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  @include breakpoint(medium) {
+    > ul {
+      @include grid-row();
+    }
+    .is-submenu-item {
+      border-bottom: 1px solid $white;
+      &:first-child {
+        //border-top: 1px solid $white;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    & > ul > li:first-child > a {
+      //padding-left: 0;
+    }
+    & > ul > li:last-child > a {
+      //padding-right: 0;
+    }
+  }
+}
+
+.menu-sub {
+  li {
+    &.active a {
+      background-color: transparent;
+    }
+  }
+  a {
+    font-size: 16px;
+    color: get-color(secondary);
+  }
+}
+
+.menu-meta,
+.menu-language {
+  display: inline-block;
+  margin: 0;
+  //margin-top: 30px;
+  list-style: none;
+  font-size: 85%;
+  li {
+    display: table-cell;
+    text-align: right;
+    &.active a {
+      color: get-color(primary);
+    }
+    a, > span {
+      padding: 0.4rem 0.6rem;
+      color: get-color(secondary);
+    }
+    &.text-muted span {
+      color: $medium-gray;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+type: Form
+identifier: contact
+label: Contact
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'Contact test'
+      recipientAddress: post@thomaskieslich.de
+      recipientName: Recipient
+      senderAddress: f@f.de
+      senderName: 'Sender name'
+      replyToAddress: ''
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      translation:
+        language: 'EN'
+    identifier: EmailToReceiver
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: ''
+      nextButtonLabel: ''
+    type: Page
+    identifier: page-1
+    label: Contact
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: name
+        label: Name
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-2
+        label: Email
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            identifier: EmailAddress
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: Message

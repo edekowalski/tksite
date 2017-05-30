@@ -1,0 +1,38 @@
+.page-header {
+  display: none;
+  @include breakpoint(medium) {
+    display: block;
+    background-color: #0a0a0a;
+    width: 100%;
+    background-color: $topbar-background;
+    > div {
+      @include grid-row();
+    }
+
+    > div > div {
+      //height: 150px;
+    }
+
+    a.logo {
+      display: block;
+      width: 6rem;
+      height: 1.5rem;
+      //text-indent: 101%;
+      overflow: hidden;
+      background-image: url(#{$icon-path}typo3-white.svg) ;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .searchbox {
+    .tx-kesearch-pi1 {
+      padding: 0 0 0 0.6rem;
+    }
+    .resetbutt,
+    .submitbutt {
+      display: none;
+    }
+
+  }
+}

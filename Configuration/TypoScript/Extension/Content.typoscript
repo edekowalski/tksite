@@ -1,0 +1,5 @@
+lib.contentElement {
+#  partialRootPaths {
+#    110 = EXT:tksite/Resources/Private/Partials/FSC/
+#  }
+}
