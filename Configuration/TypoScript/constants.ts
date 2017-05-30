@@ -5,17 +5,17 @@ path {
 }
 
 styles.content {
-  #  defaultHeaderType = 2
-  #  shortcut.tables = tt_content,tt_address,tt_news,tx_news_domain_model_news
-
+    defaultHeaderType = 2
     allowTags:= addToList(iframe)
 
   textmedia {
     maxW = 610
-    maxWInText = 300
+    maxWInText = 290
     columnSpacing = 8
     rowSpacing = 8
     textMargin = 16
+    borderWidth = 8
+    borderPadding = 4
 
     image{
       small = 480

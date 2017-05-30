@@ -3,3 +3,10 @@ lib.contentElement {
 #    110 = EXT:tksite/Resources/Private/Partials/FSC/
 #  }
 }
+
+lib.parseFunc_RTE {
+    nonTypoTagStdWrap.encapsLines {
+        nonWrappedTag >
+        innerStdWrap_all.ifBlank >;
+    }
+}

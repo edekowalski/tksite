@@ -44,12 +44,6 @@ tt_content {
                         pagets__default = TEXT
                         pagets__default.value = 290
                     }
-
-                    2 = CASE
-                    2 {
-                        pagets__default = TEXT
-                        pagets__default.value = 290
-                    }
                 }
 
                 maxGalleryWidthInText.cObject = CASE

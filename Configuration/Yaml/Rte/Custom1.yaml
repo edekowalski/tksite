@@ -34,7 +34,7 @@ editor:
       - { name: 'No UL Bullets', element: 'ul', attributes: { 'class': 'no-bullet' } }
 
     toolbar:
-      - [ 'Link', 'Unlink', 'Anchor', 'Table', 'SpecialChar' ]
+      - [ 'Link', 'Unlink', 'Anchor', 'Table', 'SpecialChar', 'CodeSnippet', 'Smiley' ]
       - [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ]
       - [ 'NumberedList', 'BulletedList']
       - [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord' ]
@@ -48,7 +48,8 @@ editor:
       - justify
       - specialchar
       - showblocks
-#      - codesnippet
+      - smiley
+      - codesnippet
 
     justifyClasses:
       - align-left
@@ -56,7 +57,8 @@ editor:
       - align-right
       - align-justify
 
-    codeSnippet_theme: 'monokai_sublime'
+    codeSnippet_theme: 'obsidian'
+    codeSnippet_languages: {bash: 'Bash',html: 'HTML', json: 'Json',javascript: 'JavaScript',php: 'PHP',css: 'CSS',php: 'Php',scss: 'Scss',sass: 'Sass',typoscript: 'TypoScript',yaml: 'Yaml'}
 
     removePlugins:
       - image

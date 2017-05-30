@@ -1,7 +1,6 @@
 [applicationContext = Production*]
     page {
         includeCSS {
-            ckeCode = EXT:rte_ckeditor/Resources/Public/JavaScript/Contrib/plugins/codesnippet/lib/highlight/styles/monokai_sublime.css
             styles = {$path.public}/Styles/Styles.min.css
         }
 
@@ -11,7 +10,6 @@
         }
 
         includeJSFooter {
-            ckeCode = EXT:rte_ckeditor/Resources/Public/JavaScript/Contrib/plugins/codesnippet/lib/highlight/highlight.pack.js
             scripts = {$path.public}/JavaScript/site.min.js
         }
     }
@@ -20,7 +18,6 @@
 [applicationContext = Development*]
     page {
         includeCSS {
-            ckeCode = EXT:rte_ckeditor/Resources/Public/JavaScript/Contrib/plugins/codesnippet/lib/highlight/styles/monokai_sublime.css
             styles = {$path.public}/Styles/Styles.css
         }
 
@@ -35,3 +32,14 @@
         }
     }
 [end]
+
+page {
+  includeCSS {
+    prism = {$path.public}/Vendor/Prism/prism.min.css
+  }
+
+  includeJSFooter {
+    prism = {$path.public}/Vendor/Prism/prism.min.js
+    prism-typoscript = {$path.public}/Vendor/Prism/prism-typoscript.min.js
+  }
+}
