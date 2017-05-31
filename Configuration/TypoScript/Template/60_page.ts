@@ -29,13 +29,9 @@ page {
     dataProcessing {
       10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
       10 {
-        special = directory
-        special.value = {$template.pidRoot}
-        levels = 7
-        as = menuMain
-        expandAll = 1
+        levels = 6
         includeSpacer = 1
-        titleField = nav_title // title
+        as = menuMain
       }
 
       20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
@@ -44,7 +40,6 @@ page {
         special.value = {$template.pidMeta}
         levels = 1
         as = menuMeta
-        titleField = nav_title // title
       }
 
       30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
