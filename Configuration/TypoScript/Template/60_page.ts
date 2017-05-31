@@ -44,8 +44,8 @@ page {
 
       30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
       30 {
-        entryLevel = 1
         levels = 4
+        entryLevel = 1
         expandAll = 0
         includeSpacer = 1
         as = menuSub

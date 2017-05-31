@@ -4,43 +4,9 @@
 <f:if condition="{menuMeta}">
 	<ul class="menu-meta">
 		<f:for each="{menuMeta}" as="item">
-			<f:render section="menuItem" arguments="{item: item}"/>
+			<f:render partial="Navigation/Elements/Item" arguments="{item: item}"/>
 		</f:for>
 	</ul>
 </f:if>
-
-<f:section name="menuItem">
-	<f:if condition="{item.active} || {item.current}">
-		<f:then>
-			<li class="{f:if(condition:item.active, then:' active')}{f:if(condition:item.current, then:' current')}">
-				<f:render section="menuLink" arguments="{item: item}"/>
-		</f:then>
-		<f:else if="{item.spacer}">
-			<li class="spacer">
-				<span>{item.title}</span>
-		</f:else>
-		<f:else>
-			<li>
-				<f:render section="menuLink" arguments="{item: item}"/>
-		</f:else>
-	</f:if>
-</f:section>
-
-<f:section name="menuLink">
-	<f:if condition="{item.data.target}">
-		<f:then>
-			<a href="{item.link}" target="{item.data.target}" title="{item.title}">
-		</f:then>
-		<f:else if="{item.target}">
-			<a href="{item.link}" target="{item.target}" title="{item.title}">
-		</f:else>
-		<f:else>
-			<a href="{item.link}" title="{item.title}">
-		</f:else>
-	</f:if>
-	<span>{item.title}</span>
-	</a>
-
-</f:section>
 
 </html>
