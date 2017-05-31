@@ -32,7 +32,7 @@ page {
         special = directory
         special.value = {$template.pidRoot}
         levels = 7
-        as = mainMenu
+        as = menuMain
         expandAll = 1
         includeSpacer = 1
         titleField = nav_title // title
@@ -43,7 +43,7 @@ page {
         special = list
         special.value = {$template.pidMeta}
         levels = 1
-        as = metaMenu
+        as = menuMeta
         titleField = nav_title // title
       }
 
@@ -53,19 +53,19 @@ page {
         levels = 4
         expandAll = 0
         includeSpacer = 1
-        as = subMenu
+        as = menuSub
       }
 
       40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
       40 {
         special = language
         special.value = 0,1
-        as = languagenavigation
+        as = menuLanguage
       }
     }
 
     settings {
-        pidRoot = {$template.pidRoot}
+      pidRoot = {$template.pidRoot}
     }
 
     variables {
@@ -118,23 +118,23 @@ page {
     }
 
     //Style
-#    20 = COA
-#    20 {
-#      stdWrap.noTrimWrap = | style="|"|
-#
-#      10= FILES
-#      10 {
-#        references.data = levelmedia:-1,slide
-#        references.listNum = 0
-#
-#        renderObj.wrap =  background-image:url('|');
-#        renderObj = TEXT
-#        renderObj.data = file:current:publicUrl
-#      }
-#
-#      20 = TEXT
-#      20.value = background-repeat: no-repeat;
-#      20.noTrimWrap = | ||
-#    }
+    #    20 = COA
+    #    20 {
+    #      stdWrap.noTrimWrap = | style="|"|
+    #
+    #      10= FILES
+    #      10 {
+    #        references.data = levelmedia:-1,slide
+    #        references.listNum = 0
+    #
+    #        renderObj.wrap =  background-image:url('|');
+    #        renderObj = TEXT
+    #        renderObj.data = file:current:publicUrl
+    #      }
+    #
+    #      20 = TEXT
+    #      20.value = background-repeat: no-repeat;
+    #      20.noTrimWrap = | ||
+    #    }
   }
 }

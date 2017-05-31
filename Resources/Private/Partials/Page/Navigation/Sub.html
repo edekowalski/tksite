@@ -1,9 +1,9 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-			data-namespace-typo3-fluid="true">
+	data-namespace-typo3-fluid="true">
 
-<f:if condition="{subMenu}">
+<f:if condition="{menuSub}">
 	<ul class="vertical menu menu-sub">
-		<f:for each="{subMenu}" as="mainItem">
+		<f:for each="{menuSub}" as="mainItem">
 			<f:render section="menuItem" arguments="{item: mainItem}"/>
 			<f:if condition="{mainItem.children}">
 				<f:render section="submenu" arguments="{submenu: mainItem.children}"/>
@@ -29,15 +29,15 @@
 	<f:if condition="{item.active} || {item.current}">
 		<f:then>
 			<li class="{f:if(condition:item.active, then:' active')}{f:if(condition:item.current, then:' current')}">
-			<f:render section="menuLink" arguments="{item: item}"/>
+				<f:render section="menuLink" arguments="{item: item}"/>
 		</f:then>
 		<f:else if="{item.spacer}">
 			<li class="spacer">
-			<span>{item.title}</span>
+				<span>{item.title}</span>
 		</f:else>
 		<f:else>
 			<li>
-			<f:render section="menuLink" arguments="{item: item}"/>
+				<f:render section="menuLink" arguments="{item: item}"/>
 		</f:else>
 	</f:if>
 </f:section>

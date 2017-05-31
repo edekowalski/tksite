@@ -29,7 +29,7 @@ page {
 
   includeJSFooter {
     jslibs = {$path.public}/JavaScript/site-libs.min.js
-      jslibs.forceOnTop = true
+    jslibs.forceOnTop = true
     prism = {$path.public}/Vendor/Prism/prism.min.js
     prism-typoscript = {$path.public}/Vendor/Prism/prism-typoscript.min.js
   }
