@@ -57,6 +57,25 @@ page {
         special.value = 0,1
         as = menuLanguage
       }
+
+      50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      50 {
+        special = rootline
+        special.range = 0|-1
+        includeNotInMenu = 1
+        as = menuBreadcrumb
+        if {
+          value = 0
+          value {
+            insertData = 1
+            prioriCalc = 1
+            stdWrap.wrap = |-1
+          }
+          isGreaterThan {
+            data = level
+          }
+        }
+      }
     }
 
     settings {
@@ -64,7 +83,6 @@ page {
     }
 
     variables {
-      #            headerLogo < temp.header.logo
     }
   }
 
