@@ -17,14 +17,8 @@
 		</div>
 
 		<div class="top-bar-right">
-			<div class="meta">
-				<f:render partial="Navigation/Meta" arguments="{_all}"/>
-				<br>
-				<f:render partial="Navigation/Language" arguments="{_all}"/>
-				<div class="searchbox">
-					<f:cObject typoscriptObjectPath="lib.searchbox"/>
-				</div>
-			</div>
+			<f:render partial="Navigation/Language" arguments="{_all}"/>
+			<f:render partial="Navigation/Meta" arguments="{_all}"/>
 		</div>
 	</div>
 </div>

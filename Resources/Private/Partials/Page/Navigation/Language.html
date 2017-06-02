@@ -7,11 +7,11 @@
 			<li class="{f:if(condition: item.active, then: 'active')} {f:if(condition: item.available, else: 'text-muted')}">
 				<f:switch expression="{item.languageUid}">
 					<f:case value="1">
-						<f:variable name="languageTitle">Englisch</f:variable>
+						<f:variable name="languageTitle">En</f:variable>
 						<f:variable name="hreflang">en-GB</f:variable>
 					</f:case>
 					<f:defaultCase>
-						<f:variable name="languageTitle">Deutsch</f:variable>
+						<f:variable name="languageTitle">De</f:variable>
 						<f:variable name="hreflang">de-DE</f:variable>
 					</f:defaultCase>
 				</f:switch>

@@ -4142,7 +4142,6 @@ body.layout-2 {
   @media print, screen and (min-width: 37.5em) {
     .page-header {
       display: block;
-      background-color: #0a0a0a;
       width: 100%;
       background-color: #fefefe; }
       .page-header > div {
@@ -4156,10 +4155,12 @@ body.layout-2 {
           clear: both; }
       .page-header a.logo {
         display: block;
-        width: 6rem;
-        height: 1.5rem;
+        width: 135px;
+        height: 38px;
+        margin: 6px 0;
+        text-indent: 101%;
         overflow: hidden;
-        background-image: url(../Icons/typo3-white.svg);
+        background-image: url(../Icons//logo-typo3.svg);
         background-repeat: no-repeat;
         background-size: contain; } }
   .page-header .searchbox .tx-kesearch-pi1 {
@@ -4324,34 +4325,56 @@ body.layout-belayout-1 .page-main .frame-type-table > div {
       .menu-main .is-submenu-item:last-child {
         border-bottom: none; } }
 
+.menu-sub li a {
+  font-size: 16px;
+  color: #777;
+  padding-left: 0; }
+
 .menu-sub li.active a {
   background-color: transparent; }
 
-.menu-sub a {
-  font-size: 16px;
-  color: #777; }
+.top-bar-right {
+  position: relative; }
 
-.menu-meta,
 .menu-language {
-  display: inline-block;
-  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 6px;
   list-style: none;
+  margin: 0;
   font-size: 85%; }
-  .menu-meta li,
   .menu-language li {
     display: table-cell;
     text-align: right; }
-    .menu-meta li.active a,
     .menu-language li.active a {
       color: #e87c0c; }
-    .menu-meta li a, .menu-meta li > span,
-    .menu-language li a,
-    .menu-language li > span {
-      padding: 0.4rem 0.6rem;
+    .menu-language li a, .menu-language li > span {
+      padding: 0.4rem 0.2rem;
       color: #777; }
-    .menu-meta li.text-muted span,
     .menu-language li.text-muted span {
       color: #cacaca; }
+
+.menu-meta {
+  display: inline-block;
+  margin: 0;
+  margin-top: 26px;
+  list-style: none;
+  font-size: 85%; }
+  .menu-meta li {
+    display: table-cell;
+    text-align: right; }
+    .menu-meta li.active a {
+      color: #e87c0c; }
+    .menu-meta li a, .menu-meta li > span {
+      padding: 0.4rem 0.6rem;
+      color: #777; }
+      .menu-meta li a:last-child, .menu-meta li > span:last-child {
+        padding-right: 0; }
+    .menu-meta li.text-muted span {
+      color: #cacaca; }
+
+.menu-breadcrumb {
+  padding-left: 1rem; }
 
 .ce-align-left {
   text-align: left; }
