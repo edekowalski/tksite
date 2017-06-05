@@ -7,7 +7,6 @@ config {
   htmlTag_setParams = lang="de"
   sys_language_mode = content_fallback
   sys_language_overlay = 1
-#  sys_language_overlay = hideNonTranslated
 }
 
 page.bodyTagCObject.10.30.value = de

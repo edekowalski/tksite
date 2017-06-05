@@ -1,3 +1,16 @@
+page {
+  includeCSS {
+    prism = {$path.public}/Vendor/Prism/prism.min.css
+  }
+
+  includeJSFooter {
+    jslibs = {$path.public}/JavaScript/site-libs.min.js
+    jslibs.forceOnTop = true
+    prism = {$path.public}/Vendor/Prism/prism.min.js
+    prism-typoscript = {$path.public}/Vendor/Prism/prism-typoscript.min.js
+  }
+}
+
 [applicationContext = Production*]
   page {
     includeCSS {
@@ -21,16 +34,3 @@
     }
   }
 [end]
-
-page {
-  includeCSS {
-    prism = {$path.public}/Vendor/Prism/prism.min.css
-  }
-
-  includeJSFooter {
-    jslibs = {$path.public}/JavaScript/site-libs.min.js
-    jslibs.forceOnTop = true
-    prism = {$path.public}/Vendor/Prism/prism.min.js
-    prism-typoscript = {$path.public}/Vendor/Prism/prism-typoscript.min.js
-  }
-}

@@ -1,2 +1,4 @@
 # tksite
-Template for TYPO3 Project for my local Dev Project.
+Template and Configuration Extension for TYPO3 Project.
+ 
+Development only

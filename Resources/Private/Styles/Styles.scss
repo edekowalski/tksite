@@ -10,7 +10,7 @@ $font-path: '../Fonts/';
 @import 'Base/font-import';
 @import 'Base/font-awesome';
 //@import 'Base/foundation';
-@include foundation-everything(false);
+@include foundation-everything(true);
 
 @import 'Base/typography';
 

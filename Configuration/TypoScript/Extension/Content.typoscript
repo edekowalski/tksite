@@ -1,12 +1,6 @@
-lib.contentElement {
-#  partialRootPaths {
-#    110 = EXT:tksite/Resources/Private/Partials/FSC/
-#  }
-}
-
 lib.parseFunc_RTE {
     nonTypoTagStdWrap.encapsLines {
         nonWrappedTag >
-        innerStdWrap_all.ifBlank >;
+        innerStdWrap_all.ifBlank >
     }
 }

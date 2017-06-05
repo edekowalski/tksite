@@ -1,9 +1,6 @@
 page = PAGE
 page {
   shortcutIcon = {$path.public}/Icons/favicon.ico
-
-  #  headTag = <head>>
-
   headerData {
     10 = COA
     10 {
@@ -21,6 +18,7 @@ page {
 
   meta {
     charset = utf-8
+
     // !!addRootLineFields in ext_localconf.php
     keywords.data = levelfield: -1, keywords, slide
     description.data = levelfield: -1, description, slide
