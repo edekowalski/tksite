@@ -29,6 +29,8 @@ page {
     dataProcessing {
       10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
       10 {
+        special = directory
+        special.value = {$template.pidRoot}
         levels = 6
         includeSpacer = 1
         as = menuMain
@@ -54,7 +56,7 @@ page {
       40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
       40 {
         special = language
-        special.value = 0,1
+        special.value = {$template.languages}
         as = menuLanguage
       }
 
@@ -64,17 +66,6 @@ page {
         special.range = 0|-1
         includeNotInMenu = 1
         as = menuBreadcrumb
-        if {
-          value = 0
-          value {
-            insertData = 1
-            prioriCalc = 1
-            stdWrap.wrap = |-1
-          }
-          isGreaterThan {
-            data = level
-          }
-        }
       }
     }
 

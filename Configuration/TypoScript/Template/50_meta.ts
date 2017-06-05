@@ -20,6 +20,7 @@ page {
   }
 
   meta {
+    charset = utf-8
     // !!addRootLineFields in ext_localconf.php
     keywords.data = levelfield: -1, keywords, slide
     description.data = levelfield: -1, description, slide

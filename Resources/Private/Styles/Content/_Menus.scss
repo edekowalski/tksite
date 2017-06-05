@@ -2,11 +2,22 @@
     background-color: $dark-gray;
     width: 100%;
     z-index: 9999;
-    a {
-        //font-size: 16px;
+    a, .spacer {
         color: $white;
     }
-
+    li.current > span {
+        color: $light-gray;
+        display: block;
+        line-height: 1;
+        padding: $menu-item-padding;
+    }
+    li.spacer > span {
+        color: $white;
+        display: block;
+        line-height: 1;
+        padding: $menu-item-padding;
+        text-transform: uppercase;
+    }
     @include breakpoint(medium down) {
         li {
             border-bottom: 1px solid $white;
@@ -83,19 +94,17 @@
 }
 
 .menu-meta {
-    display: inline-block;
-    margin: 0;
-    margin-top: 26px;
-    list-style: none;
+    margin-top: 23px;
     font-size: 85%;
     li {
-        display: table-cell;
-        text-align: right;
+        //display: table-cell;
+        //text-align: right;
         &.active a {
-            color: get-color(primary);
+            //color: get-color(primary);
+            background: none;
         }
         a, > span {
-            padding: 0.4rem 0.6rem;
+            //padding: 0.4rem 0.6rem;
             color: get-color(secondary);
             &:last-child {
                 padding-right: 0;
@@ -107,6 +116,6 @@
     }
 }
 
-.menu-breadcrumb{
+.menu-breadcrumb {
     padding-left: 1rem;
 }

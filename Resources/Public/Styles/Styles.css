@@ -4301,8 +4301,19 @@ body.layout-belayout-1 .page-main .frame-type-table > div {
   background-color: #8a8a8a;
   width: 100%;
   z-index: 9999; }
-  .menu-main a {
+  .menu-main a, .menu-main .spacer {
     color: #fefefe; }
+  .menu-main li.current > span {
+    color: #e6e6e6;
+    display: block;
+    line-height: 1;
+    padding: 0.7rem 1rem; }
+  .menu-main li.spacer > span {
+    color: #fefefe;
+    display: block;
+    line-height: 1;
+    padding: 0.7rem 1rem;
+    text-transform: uppercase; }
   @media screen and (max-width: 59.9375em) {
     .menu-main li {
       border-bottom: 1px solid #fefefe; }
@@ -4355,23 +4366,16 @@ body.layout-belayout-1 .page-main .frame-type-table > div {
       color: #cacaca; }
 
 .menu-meta {
-  display: inline-block;
-  margin: 0;
-  margin-top: 26px;
-  list-style: none;
+  margin-top: 23px;
   font-size: 85%; }
-  .menu-meta li {
-    display: table-cell;
-    text-align: right; }
-    .menu-meta li.active a {
-      color: #e87c0c; }
-    .menu-meta li a, .menu-meta li > span {
-      padding: 0.4rem 0.6rem;
-      color: #777; }
-      .menu-meta li a:last-child, .menu-meta li > span:last-child {
-        padding-right: 0; }
-    .menu-meta li.text-muted span {
-      color: #cacaca; }
+  .menu-meta li.active a {
+    background: none; }
+  .menu-meta li a, .menu-meta li > span {
+    color: #777; }
+    .menu-meta li a:last-child, .menu-meta li > span:last-child {
+      padding-right: 0; }
+  .menu-meta li.text-muted span {
+    color: #cacaca; }
 
 .menu-breadcrumb {
   padding-left: 1rem; }
