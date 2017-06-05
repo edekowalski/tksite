@@ -5,3 +5,4 @@ if (!defined('TYPO3_MODE')) {
 
 //hide Thumbnails in List
 $GLOBALS['TCA']['tt_content']['ctrl']['thumbnail'] = '';
+$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['default'] = 'textmedia';
