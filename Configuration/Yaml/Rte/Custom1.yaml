@@ -58,7 +58,16 @@ editor:
       - align-justify
 
     codeSnippet_theme: 'obsidian'
-    codeSnippet_languages: {bash: 'Bash',html: 'HTML', json: 'Json',javascript: 'JavaScript',php: 'PHP',css: 'CSS',php: 'Php',scss: 'Scss',sass: 'Sass',typoscript: 'TypoScript',yaml: 'Yaml'}
+    codeSnippet_languages:
+      bash: 'Bash'
+      html: 'HTML'
+      json: 'Json'
+      javascript: 'JavaScript'
+      php: 'PHP'
+      css: 'CSS'
+      scss: 'Scss'
+      typoscript: 'TypoScript'
+      yaml: 'Yaml'
 
     removePlugins:
       - image
