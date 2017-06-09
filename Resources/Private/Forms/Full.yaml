@@ -1,6 +1,4 @@
 
-renderingOptions:
-  submitButtonLabel: Submit
 type: Form
 identifier: fullTest
 label: FullTest

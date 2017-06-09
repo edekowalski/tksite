@@ -1,34 +1,44 @@
 
-renderingOptions:
-  submitButtonLabel: Submit
 type: Form
 identifier: contact
-label: Contact
+label: Kontakt
 prototypeName: standard
 finishers:
   -
+    identifier: EmailToReceiver
     options:
-      subject: 'Contact test'
+      subject: 'Contact'
       recipientAddress: post@thomaskieslich.de
-      recipientName: Recipient
-      senderAddress: f@f.de
-      senderName: 'Sender name'
+      recipientName: Thomas Kieslich
+      senderAddress: '{email}'
+      senderName: '{name}'
+      senderName: '{name}'
       replyToAddress: ''
       carbonCopyAddress: ''
       blindCarbonCopyAddress: ''
-      format: html
-      translation:
-        language: 'EN'
-    identifier: EmailToReceiver
+      format: plaintext
+  -
+    identifier: Confirmation
+    options:
+      message: 'Thx'
 renderables:
   -
-    renderingOptions:
-      previousButtonLabel: ''
-      nextButtonLabel: ''
     type: Page
     identifier: page-1
-    label: Contact
     renderables:
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: message
+        label: Nachricht
+        properties:
+          rows: 5
+          cols: 40
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
       -
         defaultValue: ''
         type: Text
@@ -43,7 +53,7 @@ renderables:
       -
         defaultValue: ''
         type: Text
-        identifier: text-2
+        identifier: email
         label: Email
         properties:
           fluidAdditionalAttributes:
@@ -53,8 +63,3 @@ renderables:
             identifier: NotEmpty
           -
             identifier: EmailAddress
-      -
-        defaultValue: ''
-        type: Textarea
-        identifier: textarea-1
-        label: Message

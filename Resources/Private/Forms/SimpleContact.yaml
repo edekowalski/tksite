@@ -1,8 +1,8 @@
 
 renderingOptions:
   submitButtonLabel: Submit
-identifier: contact-form
-label: 'Contact Form'
+identifier: simpleContact
+label: SimpleContact
 type: Form
 prototypeName: standard
 finishers:
@@ -35,26 +35,51 @@ renderables:
         identifier: name
         label: Name
         type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Name
+        validators:
+          -
+            identifier: NotEmpty
       -
         defaultValue: ''
         identifier: subject
         label: Subject
         type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Subject
+        validators:
+          -
+            identifier: NotEmpty
       -
         defaultValue: ''
         identifier: email
         label: Email
         type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Email address'
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            identifier: EmailAddress
       -
         defaultValue: ''
         identifier: message
         label: Message
         type: Textarea
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: ''
+        validators:
+          -
+            identifier: NotEmpty
   -
     renderingOptions:
       previousButtonLabel: 'previous Page'
       nextButtonLabel: 'next Page'
-      submitButtonLabel: Submit
     identifier: summarypage
     label: 'Summary page'
     type: SummaryPage

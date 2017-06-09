@@ -3,14 +3,13 @@ $image-path: '../Images/';
 $font-path: '../Fonts/';
 
 @import 'settings';
-//@import '../../../Build/bower_components/motion-ui/motion-ui';
 @import '../../../Build/bower_components/foundation-sites/scss/foundation';
 
 
 @import 'Base/font-import';
 @import 'Base/font-awesome';
 //@import 'Base/foundation';
-@include foundation-everything(true);
+@include foundation-everything(false);
 
 @import 'Base/typography';
 
@@ -24,7 +23,6 @@ $font-path: '../Fonts/';
 //Content
 @import 'Content/Fsc';
 @import 'Content/Galleries';
-//@import 'Content/GalleriesFlex';
 @import 'Content/Frames';
 @import 'Content/Tkcontent';
 

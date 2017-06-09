@@ -13,8 +13,8 @@ TYPO3:
               renderingOptions:
                 translation:
                   translationFile:
-                    10: 'EXT:form/Resources/Private/Language/locallang.xlf'
-                    100: 'EXT:tksite/Resources/Private/Language/locallang_form.xlf'
+#                    10: 'EXT:form/Resources/Private/Language/locallang.xlf'
+                    100: 'EXT:tksite/Resources/Private/Language/form.xlf'
                 templateRootPaths:
                   100: 'EXT:tksite/Resources/Private/Templates/Form/'
                 partialRootPaths:
