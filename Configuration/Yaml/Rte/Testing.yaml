@@ -87,7 +87,7 @@ processing:
       'disabled': false
     'properties.':
       'class.':
-        allowedClasses: 'link-internal,link-internal-blank,link-download,link-download-blank,link-folder,link-external,link-external-blank,link-mail'
+        allowedClasses: 'link-internal,link-internal-blank,link-download,link-folder,link-external,link-external-blank,link-mail'
       'title.':
         readOnly: false
     'page.':
@@ -106,6 +106,7 @@ processing:
       'properties.':
         'class.':
           default: 'link-external-blank'
+        'titleText': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_external_blank_titleText'
     'mail.':
       'properties.':
         'class.':
@@ -116,12 +117,14 @@ processing:
   'linkInternal.':
     'class': 'link-internal'
     'type': 'page'
+    'target': '_top'
     'titleText': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_internal_titleText'
   'linkInternalBlank.':
     'class': 'link-internal-blank'
     'type': 'page'
     'target': '_blank'
     'titleText': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_internal_blank_titleText'
+    'target': '_blank'
   'linkDownload.':
     'class': 'link-download'
     'type': 'file'

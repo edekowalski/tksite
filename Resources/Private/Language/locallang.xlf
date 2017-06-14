@@ -147,12 +147,6 @@
 			<trans-unit id="link_download_titleText">
 				<source>Initiates file download</source>
 			</trans-unit>
-			<trans-unit id="link_download_blank_altText">
-				<source>Initiates file download in new Window</source>
-			</trans-unit>
-			<trans-unit id="link_download_blank_titleText">
-				<source>Initiates file download in new Window</source>
-			</trans-unit>
 
 			<trans-unit id="link_folder_altText">
 				<source>Initiates open folder</source>
