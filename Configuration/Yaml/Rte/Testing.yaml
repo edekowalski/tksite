@@ -34,7 +34,7 @@ editor:
       - { name: 'No UL Bullets', element: 'ul', attributes: { 'class': 'no-bullet' } }
 
     toolbar:
-      - [ 'Link', 'Unlink', 'Anchor', 'Table', 'SpecialChar', 'CodeSnippet', 'Youtube' ]
+      - [ 'Link', 'Unlink', 'Anchor', 'Table', 'SpecialChar', 'CodeSnippet', 'Youtube', 'Image' ]
       - [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ]
       - [ 'NumberedList', 'BulletedList']
       - [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord' ]
@@ -62,12 +62,16 @@ editor:
     youtube_width: '550'
 
     removePlugins:
-      - image
+#      - image
 
     removeButtons:
 
   externalPlugins:
     youtube: { resource: 'EXT:tksite/Resources/Public/JavaScript/Ckeditor/Plugins/youtube/' }
+    typo3image:
+      resource: "EXT:rte_ckeditor_image/Resources/Public/JavaScript/Plugins/typo3image.js"
+      route: "rteckeditorimage_wizard_select_image"
+      allowedExtensions: "jpg,jpeg,png"
 
 
 processing:
