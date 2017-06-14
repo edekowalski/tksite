@@ -127,6 +127,59 @@
 				<source>Current Edition</source>
 			</trans-unit>
 
+			<!--RTE Links-->
+			<trans-unit id="link_internal_altText">
+				<source>Opens internal link in current window</source>
+			</trans-unit>
+			<trans-unit id="link_internal_titleText">
+				<source>Opens internal link in current window</source>
+			</trans-unit>
+			<trans-unit id="link_internal_blank_altText">
+				<source>Opens internal link in new window</source>
+			</trans-unit>
+			<trans-unit id="link_internal_blank_titleText">
+				<source>Opens internal link in new window</source>
+			</trans-unit>
+
+			<trans-unit id="link_download_altText">
+				<source>Initiates file download</source>
+			</trans-unit>
+			<trans-unit id="link_download_titleText">
+				<source>Initiates file download</source>
+			</trans-unit>
+			<trans-unit id="link_download_blank_altText">
+				<source>Initiates file download in new Window</source>
+			</trans-unit>
+			<trans-unit id="link_download_blank_titleText">
+				<source>Initiates file download in new Window</source>
+			</trans-unit>
+
+			<trans-unit id="link_folder_altText">
+				<source>Initiates open folder</source>
+			</trans-unit>
+			<trans-unit id="link_folder_titleText">
+				<source>Initiates open folder</source>
+			</trans-unit>
+
+			<trans-unit id="link_external_altText">
+				<source>Opens external link in current window</source>
+			</trans-unit>
+			<trans-unit id="link_external_titleText">
+				<source>Opens external link in current window</source>
+			</trans-unit>
+			<trans-unit id="link_external_blank_altText">
+				<source>Opens external link in new window</source>
+			</trans-unit>
+			<trans-unit id="link_external_blank_titleText">
+				<source>Opens external link in new window</source>
+			</trans-unit>
+
+			<trans-unit id="link_mail_altText">
+				<source>Opens window for sending email</source>
+			</trans-unit>
+			<trans-unit id="link_mail_titleText">
+				<source>Opens window for sending email</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

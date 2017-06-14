@@ -1,33 +1,33 @@
 # Load default processing options
 imports:
-    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
-    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
-    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Processing.yaml' }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml' }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml' }
 
 # Add configuration for the editor
 # For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
 editor:
   config:
-    contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:tksite/Resources/Public/Styles/Rte.css"]
-    width: "680px"
+    contentsCss: ['EXT:rte_ckeditor/Resources/Public/Css/contents.css', 'EXT:tksite/Resources/Public/Styles/Rte.css']
+    width: '680px'
     resize_enabled: true
     resize_dir: 'both'
     resize_maxWidth: 1000
     resize_minWidth: 400
-    uiColor: "#F8F8F8"
+    uiColor: '#F8F8F8'
 
-    format_tags: "p;h1;h2;h3;h4;h5;pre"
+    format_tags: 'p;h1;h2;h3;h4;h5;pre'
 
     stylesSet:
       # block level styles
-      - { name: "align-left", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-left' }}
-      - { name: "align-center", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-center' }}
-      - { name: "align-right", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-right' }}
-      - { name: "align-justify", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-justify' }}
-      - { name: "Tiny Paragraph", element: "p", attributes: { 'class': 'p-tiny' }}
+      - { name: 'align-left', element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-left' }}
+      - { name: 'align-center', element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-center' }}
+      - { name: 'align-right', element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-right' }}
+      - { name: 'align-justify', element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-justify' }}
+      - { name: 'Tiny Paragraph', element: 'p', attributes: { 'class': 'p-tiny' }}
       # Inline styles
-      - { name: "Important", element: "span", attributes: { 'class': 'c-important' }}
-      - { name: "Tiny Word", element: "span", attributes: { 'class': 'c-tiny' }}
+      - { name: 'Important', element: 'span', attributes: { 'class': 'c-important' }}
+      - { name: 'Tiny Word', element: 'span', attributes: { 'class': 'c-tiny' }}
       # List styles
       - { name: 'UL Style 1', element: 'ul', attributes: { 'class': 'ul-style1' } }
       - { name: 'UL Style 2', element: 'ol', attributes: { 'class': 'ul-style2' } }
@@ -39,7 +39,7 @@ editor:
       - [ 'NumberedList', 'BulletedList']
       - [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord' ]
       - [ 'Undo', 'Redo', 'RemoveFormat', 'ShowBlocks' ]
-      - "/"
+      - '/'
       - [ 'Format', 'Styles' ]
       - [ 'Bold', 'Italic', 'Underline', 'Blockquote', 'Subscript', 'Superscript']
       - [ 'Source', 'Maximize', 'About']
@@ -67,9 +67,99 @@ editor:
     removeButtons:
 
   externalPlugins:
-    youtube: { resource: "EXT:tksite/Resources/Public/JavaScript/Ckeditor/Plugins/youtube/" }
+    youtube: { resource: 'EXT:tksite/Resources/Public/JavaScript/Ckeditor/Plugins/youtube/' }
 
 
 processing:
   allowTags:
     - iframe
+
+#Button config and defaults
+'buttons.':
+  'link.':
+    'relAttribute.':
+      'enabled': true
+    'targetSelector.':
+      'disabled': false
+    'properties.':
+      'class.':
+        allowedClasses: 'link-internal,link-internal-blank,link-download,link-download-blank,link-folder,link-external,link-external-blank,link-mail'
+      'title.':
+        readOnly: false
+    'page.':
+      'properties.':
+        'class.':
+          default: 'link-internal'
+    'file.':
+      'properties.':
+        'class.':
+          default: 'link-download'
+    'folder.':
+      'properties.':
+        'class.':
+          default: 'link-folder'
+    'url.':
+      'properties.':
+        'class.':
+          default: 'link-external-blank'
+    'mail.':
+      'properties.':
+        'class.':
+          default: 'link-mail'
+
+#Classes config
+'classesAnchor.':
+  'linkInternal.':
+    'class': 'link-internal'
+    'type': 'page'
+    'titleText': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_internal_titleText'
+  'linkInternalBlank.':
+    'class': 'link-internal-blank'
+    'type': 'page'
+    'target': '_blank'
+    'titleText': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_internal_blank_titleText'
+  'linkDownload.':
+    'class': 'link-download'
+    'type': 'file'
+    'titleText': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_download_titleText'
+  'linkDownloadBlank.':
+    'class': 'link-download-blank'
+    'type': 'file'
+    'target': '_blank'
+    'titleText': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_download_blank_titleText'
+  'linkFolder.':
+    'class': 'link-folder'
+    'type': 'folder'
+    'titleText': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_folder_titleText'
+  'linkExternal.':
+    'class': 'link-external'
+    'type': 'url'
+    'titleText': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_external_titleText'
+  'linkExternalBlank.':
+    'class': 'link-external-blank'
+    'type': 'url'
+    'target': '_blank'
+    'titleText': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_external_blank_titleText'
+  'linkMail.':
+    'class': 'link-mail'
+    'type': 'mail'
+    'titleText': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_mail_titleText'
+
+#alternative titles for classes
+'classes.':
+  'link-internal.':
+    'name': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_internal_altText'
+  'link-internal-blank.':
+    'name': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_internal_blank_altText'
+  'link-download.':
+    'name': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_download_altText'
+  'link-download-blank.':
+    'name': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_download_blank_altText'
+  'link-folder.':
+    'name': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_folder_altText'
+  'link-external.':
+    'name': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_external_altText'
+  'link-external-blank.':
+    'name': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_external_blank_altText'
+  'link-mail.':
+    'name': 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_mail_altText'
