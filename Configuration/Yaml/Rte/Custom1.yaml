@@ -84,8 +84,6 @@ processing:
     'properties.':
       'class.':
         allowedClasses: 'link-internal,link-internal-blank,link-download,link-folder,link-external,link-external-blank,link-mail'
-      'title.':
-        readOnly: false
     'page.':
       'properties.':
         'class.':
