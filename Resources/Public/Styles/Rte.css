@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /**
  * Foundation for Sites by ZURB
- * Version 6.3.1
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -71,74 +71,74 @@ small {
   font-size: 80%;
   line-height: inherit; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
   font-family: Lato, Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   color: inherit;
   text-rendering: optimizeLegibility; }
-  h1 small,
-  h2 small,
-  h3 small,
-  h4 small,
-  h5 small,
-  h6 small {
+  h1 small, .h1 small,
+  h2 small, .h2 small,
+  h3 small, .h3 small,
+  h4 small, .h4 small,
+  h5 small, .h5 small,
+  h6 small, .h6 small {
     line-height: 0;
     color: #cacaca; }
 
-h1 {
+h1, .h1 {
   font-size: 1.5rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
-h2 {
+h2, .h2 {
   font-size: 1.25rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
-h3 {
+h3, .h3 {
   font-size: 1.1875rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
-h4 {
+h4, .h4 {
   font-size: 1.125rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
-h5 {
+h5, .h5 {
   font-size: 1.0625rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
-h6 {
+h6, .h6 {
   font-size: 1rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
 @media print, screen and (min-width: 37.5em) {
-  h1 {
-    font-size: 2.75rem; }
-  h2 {
+  h1, .h1 {
+    font-size: 3rem; }
+  h2, .h2 {
     font-size: 2.5rem; }
-  h3 {
+  h3, .h3 {
     font-size: 1.9375rem; }
-  h4 {
+  h4, .h4 {
     font-size: 1.5625rem; }
-  h5 {
+  h5, .h5 {
     font-size: 1.25rem; }
-  h6 {
+  h6, .h6 {
     font-size: 1rem; } }
 
 a {
@@ -203,10 +203,10 @@ cite {
   cite:before {
     content: "— "; }
 
-abbr {
+abbr, abbr[title] {
   border-bottom: 1px dotted #0a0a0a;
-  color: #0a0a0a;
-  cursor: help; }
+  cursor: help;
+  text-decoration: none; }
 
 figure {
   margin: 0; }
@@ -243,7 +243,7 @@ kbd {
   p + .stat {
     margin-top: -1rem; }
 
-.no-bullet {
+ul.no-bullet, ol.no-bullet {
   margin-left: 0;
   list-style: none; }
 
@@ -340,6 +340,7 @@ kbd {
     page-break-inside: auto; } }
 
 table {
+  border-collapse: collapse;
   width: 100%;
   margin-bottom: 1rem;
   border-radius: 0; }

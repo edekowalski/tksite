@@ -9,25 +9,25 @@
         color: $light-gray;
         display: block;
         line-height: 1;
-        padding: $menu-item-padding;
+        padding: $dropdownmenu-padding;
     }
     li.spacer > span {
         color: $white;
         display: block;
         line-height: 1;
-        padding: $menu-item-padding;
+        padding: $dropdownmenu-padding;
         text-transform: uppercase;
     }
     @include breakpoint(medium down) {
-        li {
-            border-bottom: 1px solid $white;
-            &:first-child {
-                border-top: 1px solid $white;
-            }
-            &:last-child {
-                border-bottom: none;
-            }
-        }
+        //li {
+        //    border-bottom: 1px solid $white;
+        //    &:first-child {
+        //        border-top: 1px solid $white;
+        //    }
+        //    &:last-child {
+        //        border-bottom: none;
+        //    }
+        //}
     }
 
     @include breakpoint(medium) {

@@ -20,12 +20,37 @@ Foundation.Orbit.defaults = {
     useMUI: true
 };
 
+Foundation.AccordionMenu.defaults = {
+  /**
+   * Amount of time to animate the opening of a submenu in ms.
+   * @option
+   * @type {number}
+   * @default 250
+   */
+  slideSpeed: 250,
+  /**
+   * Adds a separate submenu toggle button. This allows the parent item to have a link.
+   * @option
+   * @example true
+   */
+  submenuToggle: true,
+  /**
+   * The text used for the submenu toggle if enabled. This is used for screen readers only.
+   * @option
+   * @example true
+   */
+  submenuToggleText: 'Toggle menu',
+  /**
+   * Allow the menu to have multiple open panes.
+   * @option
+   * @type {boolean}
+   * @default true
+   */
+  multiOpen: false
+};
+
 // console.log(Foundation.Orbit.defaults);
 $(document).foundation();
-
-$('.is-accordion-submenu-parent > a').click(function(){
-    $(this).unbind('click');
-  });
 
 $(function () {
 	"use strict";

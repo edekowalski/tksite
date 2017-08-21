@@ -8,7 +8,7 @@
 	"main": "gulpfile.js",
 	"license": "MIT",
 	"dependencies": {
-		"foundation-sites": "~6.3.0",
+		"foundation-sites": "~6.4.0",
 		"fontawesome": "~4.7.0",
 		"colorbox": "~1.6.0",
 		"jquery-touchswipe": "~1.6.0",
