@@ -4829,29 +4829,6 @@ body.layout-belayout-1 .page-main .frame-type-table > div {
 .ce-textpic, .ce-image, .ce-nowrap .ce-bodytext, .ce-gallery, .ce-row, .ce-uploads li, .ce-uploads div {
   overflow: hidden; }
 
-@media screen and (max-width: 59.9375em) {
-  .ce-bodytext {
-    max-width: 60rem;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    float: left;
-    padding-right: 0.46875rem;
-    padding-left: 0.46875rem; }
-    .ce-bodytext::before, .ce-bodytext::after {
-      display: table;
-      content: ' '; }
-    .ce-bodytext::after {
-      clear: both; } }
-  @media screen and (max-width: 59.9375em) and (min-width: 37.5em) {
-    .ce-bodytext {
-      padding-right: 0.9375rem;
-      padding-left: 0.9375rem; } }
-
-@media screen and (max-width: 59.9375em) {
-    .ce-bodytext, .ce-bodytext:last-child {
-      float: none; } }
-
 /* Headline */
 .ce-headline-left {
   text-align: left; }
@@ -4999,6 +4976,140 @@ video, audio {
 .ce-intext.ce-left ol, .ce-intext.ce-left ul {
   padding-left: 40px;
   overflow: auto; }
+
+.frame-type-form_formframework, .frame-type-header, .frame-type-list, .frame-type-textmedia, .frame-type-table {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  @media screen and (max-width: 59.9375em) {
+    .frame-type-form_formframework > header,
+    .frame-type-form_formframework > form,
+    .frame-type-form_formframework > table,
+    .frame-type-form_formframework .ce-bodytext, .frame-type-header > header,
+    .frame-type-header > form,
+    .frame-type-header > table,
+    .frame-type-header .ce-bodytext, .frame-type-list > header,
+    .frame-type-list > form,
+    .frame-type-list > table,
+    .frame-type-list .ce-bodytext, .frame-type-textmedia > header,
+    .frame-type-textmedia > form,
+    .frame-type-textmedia > table,
+    .frame-type-textmedia .ce-bodytext, .frame-type-table > header,
+    .frame-type-table > form,
+    .frame-type-table > table,
+    .frame-type-table .ce-bodytext {
+      max-width: 60rem;
+      margin-right: auto;
+      margin-left: auto;
+      width: 100%;
+      float: left;
+      padding-right: 0.46875rem;
+      padding-left: 0.46875rem; }
+      .frame-type-form_formframework > header::before, .frame-type-form_formframework > header::after,
+      .frame-type-form_formframework > form::before,
+      .frame-type-form_formframework > form::after,
+      .frame-type-form_formframework > table::before,
+      .frame-type-form_formframework > table::after,
+      .frame-type-form_formframework .ce-bodytext::before,
+      .frame-type-form_formframework .ce-bodytext::after, .frame-type-header > header::before, .frame-type-header > header::after,
+      .frame-type-header > form::before,
+      .frame-type-header > form::after,
+      .frame-type-header > table::before,
+      .frame-type-header > table::after,
+      .frame-type-header .ce-bodytext::before,
+      .frame-type-header .ce-bodytext::after, .frame-type-list > header::before, .frame-type-list > header::after,
+      .frame-type-list > form::before,
+      .frame-type-list > form::after,
+      .frame-type-list > table::before,
+      .frame-type-list > table::after,
+      .frame-type-list .ce-bodytext::before,
+      .frame-type-list .ce-bodytext::after, .frame-type-textmedia > header::before, .frame-type-textmedia > header::after,
+      .frame-type-textmedia > form::before,
+      .frame-type-textmedia > form::after,
+      .frame-type-textmedia > table::before,
+      .frame-type-textmedia > table::after,
+      .frame-type-textmedia .ce-bodytext::before,
+      .frame-type-textmedia .ce-bodytext::after, .frame-type-table > header::before, .frame-type-table > header::after,
+      .frame-type-table > form::before,
+      .frame-type-table > form::after,
+      .frame-type-table > table::before,
+      .frame-type-table > table::after,
+      .frame-type-table .ce-bodytext::before,
+      .frame-type-table .ce-bodytext::after {
+        display: table;
+        content: ' '; }
+      .frame-type-form_formframework > header::after,
+      .frame-type-form_formframework > form::after,
+      .frame-type-form_formframework > table::after,
+      .frame-type-form_formframework .ce-bodytext::after, .frame-type-header > header::after,
+      .frame-type-header > form::after,
+      .frame-type-header > table::after,
+      .frame-type-header .ce-bodytext::after, .frame-type-list > header::after,
+      .frame-type-list > form::after,
+      .frame-type-list > table::after,
+      .frame-type-list .ce-bodytext::after, .frame-type-textmedia > header::after,
+      .frame-type-textmedia > form::after,
+      .frame-type-textmedia > table::after,
+      .frame-type-textmedia .ce-bodytext::after, .frame-type-table > header::after,
+      .frame-type-table > form::after,
+      .frame-type-table > table::after,
+      .frame-type-table .ce-bodytext::after {
+        clear: both; } }
+  @media screen and (max-width: 59.9375em) and (min-width: 37.5em) {
+    .frame-type-form_formframework > header,
+    .frame-type-form_formframework > form,
+    .frame-type-form_formframework > table,
+    .frame-type-form_formframework .ce-bodytext, .frame-type-header > header,
+    .frame-type-header > form,
+    .frame-type-header > table,
+    .frame-type-header .ce-bodytext, .frame-type-list > header,
+    .frame-type-list > form,
+    .frame-type-list > table,
+    .frame-type-list .ce-bodytext, .frame-type-textmedia > header,
+    .frame-type-textmedia > form,
+    .frame-type-textmedia > table,
+    .frame-type-textmedia .ce-bodytext, .frame-type-table > header,
+    .frame-type-table > form,
+    .frame-type-table > table,
+    .frame-type-table .ce-bodytext {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+  @media screen and (max-width: 59.9375em) {
+      .frame-type-form_formframework > header, .frame-type-form_formframework > header:last-child,
+      .frame-type-form_formframework > form,
+      .frame-type-form_formframework > form:last-child,
+      .frame-type-form_formframework > table,
+      .frame-type-form_formframework > table:last-child,
+      .frame-type-form_formframework .ce-bodytext,
+      .frame-type-form_formframework .ce-bodytext:last-child, .frame-type-header > header, .frame-type-header > header:last-child,
+      .frame-type-header > form,
+      .frame-type-header > form:last-child,
+      .frame-type-header > table,
+      .frame-type-header > table:last-child,
+      .frame-type-header .ce-bodytext,
+      .frame-type-header .ce-bodytext:last-child, .frame-type-list > header, .frame-type-list > header:last-child,
+      .frame-type-list > form,
+      .frame-type-list > form:last-child,
+      .frame-type-list > table,
+      .frame-type-list > table:last-child,
+      .frame-type-list .ce-bodytext,
+      .frame-type-list .ce-bodytext:last-child, .frame-type-textmedia > header, .frame-type-textmedia > header:last-child,
+      .frame-type-textmedia > form,
+      .frame-type-textmedia > form:last-child,
+      .frame-type-textmedia > table,
+      .frame-type-textmedia > table:last-child,
+      .frame-type-textmedia .ce-bodytext,
+      .frame-type-textmedia .ce-bodytext:last-child, .frame-type-table > header, .frame-type-table > header:last-child,
+      .frame-type-table > form,
+      .frame-type-table > form:last-child,
+      .frame-type-table > table,
+      .frame-type-table > table:last-child,
+      .frame-type-table .ce-bodytext,
+      .frame-type-table .ce-bodytext:last-child {
+        float: none; } }
+  @media print, screen and (min-width: 60em) {
+    .frame-type-form_formframework, .frame-type-header, .frame-type-list, .frame-type-textmedia, .frame-type-table {
+      padding-top: 2rem;
+      padding-bottom: 2rem; } }
 
 .frame-layout-100 {
   background-color: #d8ffbb; }

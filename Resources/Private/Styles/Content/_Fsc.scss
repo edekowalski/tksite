@@ -14,12 +14,6 @@
     overflow: hidden;
 }
 
-.ce-bodytext {
-    @include breakpoint(medium down) {
-        @include grid-column-row();
-    }
-}
-
 /* Headline */
 .ce-headline-left {
     text-align: left;
