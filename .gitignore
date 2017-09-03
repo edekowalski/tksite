@@ -2,3 +2,5 @@
 /Build/bower_components/
 /Build/node_modules/
 /.editorconfig
+/composer.lock
+/.Build
