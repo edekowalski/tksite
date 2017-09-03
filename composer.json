@@ -1,0 +1,56 @@
+{
+	"repositories": [
+		{
+			"type": "git",
+			"url": "https://github.com/thomaskieslich/tksite"
+		}
+	],
+	"name": "thomask/tksite",
+	"type": "typo3-cms-extension",
+	"description": "TK Sitepackage",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "Thomas Kieslich",
+			"email": "post@thomaskieslich.de",
+			"role": "Developer",
+			"homepage": "https://thomaskieslich.de/"
+		}
+	],
+	"version": "8.7.0",
+	"require": {
+		"typo3/cms-core": "^8.7.0",
+		"typo3/cms": "^8.7.0"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^5.7",
+		"mikey179/vfsStream": "^1.6",
+		"friendsofphp/php-cs-fixer": "^2.1"
+	},
+	"replace": {
+		"tksite": "self.version"
+	},
+	"config": {
+		"optimize-autoloader": true,
+		"vendor-dir": ".Build/vendor",
+		"bin-dir": ".Build/bin",
+		"preferred-install": {
+			"typo3/cms": "source"
+		}
+	},
+	"scripts": {
+		"post-autoload-dump": [
+			"mkdir -p .Build/Web/typo3conf/ext/",
+			"[ -L .Build/Web/typo3conf/ext/tksite ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/tksite"
+		]
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "8.x-dev"
+		},
+		"typo3/cms": {
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"web-dir": ".Build/Web"
+		}
+	}
+}
