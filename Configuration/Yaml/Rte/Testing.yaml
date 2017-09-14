@@ -62,17 +62,12 @@ editor:
     youtube_width: '550'
 
     removePlugins:
-#      - image
+     - image
 
     removeButtons:
 
   externalPlugins:
     youtube: { resource: 'EXT:tksite/Resources/Public/JavaScript/Ckeditor/Plugins/youtube/' }
-    typo3image:
-      resource: "EXT:rte_ckeditor_image/Resources/Public/JavaScript/Plugins/typo3image.js"
-      route: "rteckeditorimage_wizard_select_image"
-      allowedExtensions: "jpg,jpeg,png"
-
 
 processing:
   allowTags:
