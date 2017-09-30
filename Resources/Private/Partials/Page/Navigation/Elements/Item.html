@@ -1,7 +1,7 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
 	data-namespace-typo3-fluid="true">
 
-<f:if condition="{item.spacer} || {item.current}">
+<f:if condition="{item.spacer}">
 	<f:then>
 		<li class="{f:if(condition:item.current, then:' current')}{f:if(condition:item.spacer, then:' spacer')}">
 		<span>{item.title}</span>

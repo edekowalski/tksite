@@ -2761,10 +2761,10 @@ a.button:hover, a.button:focus {
       margin: 0.25rem auto 0; }
   .menu .is-active > a {
     background: #e87c0c;
-    color: #fefefe; }
+    color: #8a8a8a; }
   .menu .active > a {
     background: #e87c0c;
-    color: #fefefe; }
+    color: #8a8a8a; }
   .menu.align-left {
     text-align: left; }
   .menu.align-right {
@@ -4779,7 +4779,8 @@ body.layout-belayout-1 .page-main .frame-type-table > div {
   padding-left: 0; }
 
 .menu-sub li.active a {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #0a0a0a; }
 
 .top-bar-right {
   position: relative; }
