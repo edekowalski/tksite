@@ -22,11 +22,11 @@ var PATHS = {
         'bower_components/jquery/dist/jquery.min.js',
 
         //Foundation
-        'bower_components/what-input/what-input.min.js',
+        // 'bower_components/what-input/what-input.min.js',
         'bower_components/foundation-sites/dist/js/foundation.min.js',
 
 		//other
-		'bower_components/bx-slider.js/dist/jquery.bxslider.min.js',
+		// 'bower_components/bx-slider.js/dist/jquery.bxslider.min.js',
 		'bower_components/colorbox/jquery.colorbox-min.js',
 		'bower_components/jquery-touchSwipe/jquery.touchSwipe.min.js'
 
@@ -67,7 +67,7 @@ gulp.task('javascript', function () {
 	return gulp.src(PATHS.site_js)
 		.pipe(sourcemaps.init())
 		.pipe(concat('site.js'))
-		// .pipe(uglify())
+		.pipe(uglify())
 		.pipe(sourcemaps.write('./maps'))
 		.pipe(gulp.dest(PATHS.site_dist + 'JavaScript/'));
 });
@@ -99,6 +99,6 @@ gulp.task('build', function (done) {
 });
 
 gulp.task('default', function () {
-	gulp.watch(PATHS.site_src + 'Styles/**/*.scss', ['sass']);
-	gulp.watch(PATHS.site_src + 'JavaScript/**/*.js', ['javascript']);
+	gulp.watch(PATHS.site_src + 'Styles/**/*.scss', ['sass', 'minify']);
+	gulp.watch(PATHS.site_src + 'JavaScript/**/*.js', ['javascript', 'minify']);
 });
