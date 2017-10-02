@@ -78,17 +78,3 @@
 .ce-table-bordered th, .ce-table-bordered td {
     border: 1px solid #dadada;
 }
-
-/* Spaces */
-.frame-space {
-    @each $key, $space in $frame-spaces {
-        &-before-#{$key} {
-            padding-top: $space;
-            //margin-top: $space;
-        }
-        &-after-#{$key} {
-            padding-bottom: $space;
-            //margin-bottom: $space;
-        }
-    }
-}

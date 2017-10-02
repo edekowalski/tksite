@@ -20,14 +20,14 @@
         &-list,
         &-textmedia,
         &-table {
-            padding-top: $global-padding;
-            padding-bottom: $global-padding;
+           padding-top: map-get($frame-spaces, medium);
+           padding-bottom: map-get($frame-spaces, medium);
 
             @include breakpoint(medium down) {
                 > header,
                 > form,
                 > table,
-                //> div,
+                    //> div,
                 .ce-bodytext {
                     @include grid-col-row();
                 }
@@ -74,6 +74,20 @@
         }
         &-115 {
             background-color: get-color(bg-3);
+        }
+    }
+
+    /* Spaces */
+    &.frame-space {
+        @each $key, $space in $frame-spaces {
+            &-before-#{$key} {
+                padding-top: $space !important;
+                //margin-top: $space;
+            }
+            &-after-#{$key} {
+                padding-bottom: $space !important;
+                //margin-bottom: $space;
+            }
         }
     }
 
