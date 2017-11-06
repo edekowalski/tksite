@@ -112,18 +112,18 @@ function initColorbox() {
 			slideshowStart: "start slideshow",
 			slideshowStop: "stop slideshow",
 			current: "<span data-current='{current}' data-total='{total}' />",
-			onOpen : function () {
-				$('html').css({
-					overflow: 'hidden',
-					position: 'fixed'
-				});
-			},
-			onClosed : function () {
-				$('html').css({
-					overflow: 'auto',
-					position: 'static'
-				});
-			},
+			// onOpen : function () {
+			// 	$('html').css({
+			// 		overflow: 'hidden',
+			// 		position: 'fixed'
+			// 	});
+			// },
+			// onClosed : function () {
+			// 	$('html').css({
+			// 		overflow: 'auto',
+			// 		position: 'static'
+			// 	});
+			// },
 			onComplete: function () {
 				lbLoaded();
 				initTouchSwipe();
