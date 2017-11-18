@@ -27,6 +27,7 @@ page {
       ### DATA PREPROCESSING ###
       ##########################
       dataProcessing {
+         # Main menu
          10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
          10 {
             special = directory
@@ -36,6 +37,7 @@ page {
             as = menuMain
          }
 
+         # Meta menu
          20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
          20 {
             special = list
@@ -44,6 +46,7 @@ page {
             as = menuMeta
          }
 
+         # Sub menu
          30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
          30 {
             levels = 4
@@ -53,6 +56,7 @@ page {
             as = menuSub
          }
 
+         # Lang menu
          40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
          40 {
             special = language
@@ -60,6 +64,7 @@ page {
             as = menuLanguage
          }
 
+         # Breadcrumb menu
          50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
          50 {
             special = rootline
