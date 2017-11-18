@@ -27,6 +27,14 @@ page {
       ### DATA PREPROCESSING ###
       ##########################
       dataProcessing {
+         # pagemedia
+         5 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+         5 {
+            references.fieldName = media
+            as = pagemedia
+         }
+
+         # Main menu
          10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
          10 {
             special = directory
@@ -36,6 +44,7 @@ page {
             as = menuMain
          }
 
+         # Meta menu
          20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
          20 {
             special = list
@@ -44,6 +53,7 @@ page {
             as = menuMeta
          }
 
+         # Sub menu
          30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
          30 {
             levels = 4
@@ -53,6 +63,7 @@ page {
             as = menuSub
          }
 
+         # Lang menu
          40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
          40 {
             special = language
@@ -60,6 +71,7 @@ page {
             as = menuLanguage
          }
 
+         # Breadcrumb menu
          50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
          50 {
             special = rootline
@@ -74,7 +86,25 @@ page {
       }
 
       variables {
+         bgStageDesktop = FILES
+         bgStageDesktop {
+            references {
+               data = levelmedia:-1,slide
+               required = 1
+               listNum = 0
+            }
 
+            renderObj = IMAGE
+            renderObj {
+               file{
+                  crop.data = file:current:crop
+                  import.data = file:current:publicUrl
+                  maxH = 333c
+               }
+               altText.data = file:current:title
+#               wrap = <div class="banner">|</div>
+            }
+         }
       }
    }
 
@@ -123,23 +153,23 @@ page {
       }
 
       //Style
-#      20 = COA
-#      20 {
-#         stdWrap.noTrimWrap = | style="|"|
-#
-#         10 = FILES
-#         10 {
-#            references.data = levelmedia:-1,slide
-#            references.listNum = 0
-#
-#            renderObj.wrap = background-image:url('|');
-#            renderObj = TEXT
-#            renderObj.data = file:current:publicUrl
-#         }
-#
-#         20 = TEXT
-#         20.value = background-repeat: no-repeat;
-#         20.noTrimWrap = | ||
-#      }
+      #      20 = COA
+      #      20 {
+      #         stdWrap.noTrimWrap = | style="|"|
+      #
+      #         10 = FILES
+      #         10 {
+      #            references.data = levelmedia:-1,slide
+      #            references.listNum = 0
+      #
+      #            renderObj.wrap = background-image:url('|');
+      #            renderObj = TEXT
+      #            renderObj.data = file:current:publicUrl
+      #         }
+      #
+      #         20 = TEXT
+      #         20.value = background-repeat: no-repeat;
+      #         20.noTrimWrap = | ||
+      #      }
    }
 }
