@@ -10,6 +10,7 @@ $TYPO3_CONF_VARS['FE']['addRootLineFields'] .= ',abstract, keywords, description
 
 //add rte settings
 $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['custom1'] = 'EXT:tksite/Configuration/Yaml/Rte/Custom1.yaml';
+$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['testing'] = 'EXT:tksite/Configuration/Yaml/Rte/Testing.yaml';
 
 
 $TYPO3_CONF_VARS['FE']['pageNotFound_handling'] = '/index.php?id=36';
