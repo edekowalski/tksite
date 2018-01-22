@@ -1,0 +1,30 @@
+$icon-path: '../Icons/';
+$font-path: '../Fonts/';
+
+@import 'settings';
+@import '../node_modules/foundation-sites/scss/foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+
+@import 'Base/font-import';
+@import 'Base/font-awesome';
+//@import 'Base/foundation';
+@include foundation-everything(false);
+
+@import 'Base/typography';
+
+//Pages
+@import 'Pages/Base';
+@import 'Pages/Header';
+@import 'Pages/Main';
+@import 'Pages/Footer';
+@import 'Content/Navigation';
+
+//Content
+@import 'Content/Fsc';
+@import 'Content/Galleries';
+@import 'Content/Frames';
+@import 'Content/Tkcontent';
+
+@import 'Content/Lightbox';

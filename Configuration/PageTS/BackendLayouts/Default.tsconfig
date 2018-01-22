@@ -3,7 +3,7 @@ mod {
     BackendLayouts {
       default {
         title = LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:belayout_default
-        icon = EXT:tksite/Resources/Public/Icons/Page/default.svg
+        icon = EXT:tksite/Resources/Public/Icons/Backend/default.svg
         config {
           backend_layout {
             colCount = 4

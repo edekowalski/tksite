@@ -3,7 +3,7 @@ mod {
         BackendLayouts {
             belayout-1 {
                 title = LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:belayout_1
-                icon = EXT:tksite/Resources/Public/Icons/Page/belayout-1.svg
+                icon = EXT:tksite/Resources/Public/Icons/Backend/belayout-1.svg
                 config {
                     backend_layout {
                         colCount = 12

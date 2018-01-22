@@ -1,0 +1,25 @@
+PRODUCTION: false
+
+# Autoprefixer will make sure your CSS works with these browsers
+COMPATIBILITY:
+  - "last 2 versions"
+  - "ie >= 9"
+  - "ios >= 7"
+
+# Gulp will reference these paths when it copies files
+PATHS:
+  # Path to dist folder
+  dist: "dist"
+  # Paths to static assets that aren't images, CSS, or JavaScript
+  assets:
+    - "src/assets/**/*"
+  # Paths to Sass libraries, which can then be loaded with @import
+  sass:
+    - "node_modules/foundation-sites/scss"
+  # Paths to JavaScript entry points for webpack to bundle modules
+  js:
+    - "node_modules/jquery/dist/jquery.min.js"
+    - "node_modules/foundation-sites/dist/js/foundation.min.js"
+    - "node_modules/leaflet/dist/leaflet.js"
+    - "src/js/lib/**/*.js"
+    - "src/js/*.js"

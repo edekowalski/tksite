@@ -19,9 +19,10 @@ config {
 
 [applicationContext = Development*]
    config {
-      no_cache = 1
-      sendCacheHeaders = 0
+#      no_cache = 1
+#      sendCacheHeaders = 0
       contentObjectExceptionHandler = 0
+
       admPanel = 1
 
       # en-/ disable css/js concatenation

@@ -1,46 +1,25 @@
 page {
    includeCSS {
-      prism = {$path.public}/Vendor/Prism/prism.min.css
+      styles = {$path.public}/Styles/app.css
    }
 
    includeJSFooter {
-      jslibs = {$path.public}/JavaScript/site-libs.min.js
-      jslibs.forceOnTop = true
-      prism = {$path.public}/Vendor/Prism/prism.min.js
-      prism-typoscript = {$path.public}/Vendor/Prism/prism-typoscript.js
+      app = {$path.public}/JavaScript/app.js
+      app.forceOnTop = true
+#      prism = {$path.public}/Vendor/Prism/prism.min.js
+#      prism-typoscript = {$path.public}/Vendor/Prism/prism-typoscript.js
    }
 }
 
-[applicationContext = Production*]
-   page {
-      includeCSS {
-         styles = {$path.public}/Styles/Styles.min.css
-      }
+#[applicationContext = Development*]
+#   page {
+#      includeCSS {
+#
+#      }
+#
+#      includeJSFooter {
+#
+#      }
+#   }
+#[end]
 
-      includeJSFooter {
-         scripts = {$path.public}/JavaScript/site.min.js
-      }
-   }
-[end]
-
-[applicationContext = Development*]
-   page {
-      includeCSS {
-         styles = {$path.public}/Styles/Styles.css
-      }
-
-      includeJSFooter {
-         scripts = {$path.public}/JavaScript/site.js
-      }
-   }
-[end]
-
-page {
-   includeCSS {
-      prism = EXT:tksite/Resources/Public/Vendor/Prism/prism.min.css
-   }
-   includeJSFooter {
-      prism =  EXT:tksite/Resources/Public/Vendor/Prism/prism.min.js
-      prism-typoscript =  EXT:tksite/Resources/Public/Vendor/Prism/prism-typoscript.js
-   }
-}
