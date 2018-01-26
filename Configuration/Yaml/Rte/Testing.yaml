@@ -74,84 +74,84 @@ processing:
     - iframe
 
 #Button config and defaults
-buttons.:
-  link.:
-    relAttribute.:
+buttons:
+  link:
+    relAttribute:
       enabled: true
-    targetSelector.:
+    targetSelector:
       disabled: false
-    properties.:
-      class.:
+    properties:
+      class:
         allowedClasses: 'link-internal,link-internal-blank,link-download,link-folder,link-external,link-external-blank,link-mail'
-      title.:
+      title:
         readOnly: false
-    page.:
-      properties.:
-        class.:
+    page:
+      properties:
+        class:
           default: 'link-internal'
-    file.:
-      properties.:
-        class.:
+    file:
+      properties:
+        class:
           default: 'link-download'
-    folder.:
-      properties.:
-        class.:
+    folder:
+      properties:
+        class:
           default: 'link-folder'
-    url.:
-      properties.:
-        class.:
+    url:
+      properties:
+        class:
           default: 'link-external-blank'
-    mail.:
-      properties.:
-        class.:
+    mail:
+      properties:
+        class:
           default: 'link-mail'
 
 #Classes config
-classesAnchor.:
-  linkInternal.:
+classesAnchor:
+  linkInternal:
     class: 'link-internal'
     type: 'page'
     titleText: 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_internal_titleText'
-  linkInternalBlank.:
+  linkInternalBlank:
     class: 'link-internal-blank'
     type: 'page'
     target: '_blank'
     titleText: 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_internal_blank_titleText'
-  linkDownload.:
+  linkDownload:
     class: 'link-download'
     type: 'file'
     titleText: 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_download_titleText'
-  linkFolder.:
+  linkFolder:
     class: 'link-folder'
     type: 'folder'
     titleText: 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_folder_titleText'
-  linkExternal.:
+  linkExternal:
     class: 'link-external'
     type: 'url'
     titleText: 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_external_titleText'
-  linkExternalBlank.:
+  linkExternalBlank:
     class: 'link-external-blank'
     type: 'url'
     target: '_blank'
     titleText: 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_external_blank_titleText'
-  linkMail.:
+  linkMail:
     class: 'link-mail'
     type: 'mail'
     titleText: 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_mail_titleText'
 
 #alternative titles for classes
-classes.:
-  link-internal.:
+classes:
+  link-internal:
     name: 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_internal_altText'
-  link-internal-blank.:
+  link-internal-blank:
     name: 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_internal_blank_altText'
-  link-download.:
+  link-download:
     name: 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_download_altText'
-  link-folder.:
+  link-folder:
     name: 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_folder_altText'
-  link-external.:
+  link-external:
     name: 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_external_altText'
-  link-external-blank.:
+  link-external-blank:
     name: 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_external_blank_altText'
-  link-mail.:
+  link-mail:
     name: 'LLL:EXT:tksite/Resources/Private/Language/locallang.xlf:link_mail_altText'

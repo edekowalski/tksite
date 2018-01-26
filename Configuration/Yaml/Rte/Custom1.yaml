@@ -77,56 +77,56 @@ processing:
     - iframe
 
 #Button config and defaults
-buttons.:
-  link.:
-    relAttribute.:
+buttons:
+  link:
+    relAttribute:
       enabled: true
-    properties.:
-      class.:
+    properties:
+      class:
         allowedClasses: 'link-internal,link-internal-blank,link-download,link-folder,link-external,link-external-blank,link-mail'
-    page.:
-      properties.:
-        class.:
+    page:
+      properties:
+        class:
           default: 'link-internal'
-    file.:
-      properties.:
-        class.:
+    file:
+      properties:
+        class:
           default: 'link-download'
-    folder.:
-      properties.:
-        class.:
+    folder:
+      properties:
+        class:
           default: 'link-folder'
-    url.:
-      properties.:
-        class.:
+    url:
+      properties:
+        class:
           default: 'link-external-blank'
-    mail.:
-      properties.:
-        class.:
+    mail:
+      properties:
+        class:
           default: 'link-mail'
 
 #Classes config
-classesAnchor.:
-  linkInternal.:
+classesAnchor:
+  linkInternal:
     class: 'link-internal'
     type: 'page'
-  linkInternalBlank.:
+  linkInternalBlank:
     class: 'link-internal-blank'
     type: 'page'
     target: '_blank'
-  linkDownload.:
+  linkDownload:
     class: 'link-download'
     type: 'file'
-  linkFolder.:
+  linkFolder:
     class: 'link-folder'
     type: 'folder'
-  linkExternal.:
+  linkExternal:
     class: 'link-external'
     type: 'url'
-  linkExternalBlank.:
+  linkExternalBlank:
     class: 'link-external-blank'
     type: 'url'
     target: '_blank'
-  linkMail.:
+  linkMail:
     class: 'link-mail'
     type: 'mail'
